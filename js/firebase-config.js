@@ -4,7 +4,7 @@ import { getFirestore } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-
 
 
 const firebaseConfig = {
-  apiKey: "AlzaSyC4…K0O",
+  apiKey: "AIzaSyC43rdNjmTo02-kSTY0fNe0LEahQddKRO0",
   authDomain: "banco-site-tempo.firebaseapp.com",
   projectId: "banco-site-tempo",
   storageBucket: "banco-site-tempo.appspot.com",
