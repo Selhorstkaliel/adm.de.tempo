@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard — ADMIN</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="admin-panel">
+    <h1>Administração</h1>
+
+    <h2>Gerenciar Devs</h2>
+    <form id="add-dev-form">
+      <input placeholder="Nome do dev" id="new-dev" required>
+      <input placeholder="Senha inicial" id="new-pass" type="password" required>
+      <button type="submit">Adicionar Dev</button>
+    </form>
+    <ul id="dev-list"></ul>
+
+    <h2>Logs / Estatísticas</h2>
+    <canvas id="prodChartAdmin"></canvas>
+    <table class="table" id="logs-admin">
+      <thead><tr><th>Usuário</th><th>Data</th><th>Horas</th><th>Produções</th></tr></thead>
+      <tbody></tbody>
+    </table>
+
+    <h2>Whitelist de Acesso</h2>
+    <ul id="whitelist"></ul>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script type="module" src="js/firebase-config.js"></script>
+  <script type="module" src="js/admin.js"></script>
+</body>
+</html>
